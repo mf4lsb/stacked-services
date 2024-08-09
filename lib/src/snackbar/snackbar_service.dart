@@ -293,9 +293,10 @@ class SnackbarService {
   ) {
     if (onMainButtonTapped != null) {
       onMainButtonTapped();
-      if (closeSnackbarOnMainButtonTapped) {
-        closeSnackbar();
-      }
+    }
+
+    if (closeSnackbarOnMainButtonTapped) {
+      closeSnackbar();
     }
   }
 }
